@@ -15,61 +15,94 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" src="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
 
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://root-design.nyc3.digitaloceanspaces.com/Cultivate/megan-bucknall-2M_xbabQmBU-unsplash%20(1).webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://root-design.nyc3.digitaloceanspaces.com/Cultivate/megan-bucknall-2M_xbabQmBU-unsplash%20(1).webp">
+                    <img loading="lazy" decoding="async" src="https://root-design.nyc3.digitaloceanspaces.com/Cultivate/megan-bucknall-2M_xbabQmBU-unsplash%20(1).webp" alt="people" width="542" height="728">
                 </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60" height="60">
+                    <span class="cs-desc">
+                        We Have Over 20 Years of Experience
+                    </span>
                 </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
             </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+                        Farm To Fork
+                    </h3>
+                    <p class="cs-item-text">
+                       Together we can revolutionalize the local food movement. We believe that local food is the future and we are here to help you succeed.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+                        A Range of Services
+                    </h3>
+                    <p class="cs-item-text">
+                        We will work with you to create a marketing plan that fits your needs and budget, no pushy sales tactics here.
+                    </p>
+                </li>
+            </ul>
         </div>
-    </section>
+        <div class="cs-content">
+            <h1 class="cs-title">About <span class="cs-color">Cultivate</span></h1>
+            <h2>Empowering Local Food Enterprises: The Cultivate Local Journey</h2>
+            <h3>From Big League Experience to Local Food Revolution</h3>
+        
+            <p>
+                With a rich history steeped in the high-stakes world of corporate marketing, our team at Cultivate Local Food Marketing brings an unparalleled depth of knowledge to the table. Our journey began in the bustling corridors of the "big guys," where we honed our skills and amassed years of invaluable experience. This extensive background now serves as the cornerstone of our mission: to deliver innovative, cost-efficient marketing solutions to local food businesses everywhere.
+            </p>
+            <p>
+                At the heart of our strategy lies a unique fusion of technical prowess, creative ingenuity, and an unwavering commitment to the local food movement. Our small team of specialists draws upon a broad spectrum of experiences within the food industry, from farming and CSA's to retail and product development. This eclectic blend of backgrounds enables us to tackle challenges from multiple angles, fostering a culture of creative problem-solving in partnership with our clients. 
+            </p>
+
+           <p>The inception of Cultivate Local Food Marketing stems from a lifetime of connection to local food for our founder, Craig Sanders. Craig was raised on a family farm, where he tended a large garden, harvested sweet corn for the market, and learned about the ebb and flow of farm life. After college, he joined the sales and marketing team at Traders Point Creamery, an organic grass-fed dairy producer in Zionsville, Indiana. There, he contributed to the company's growth, enabling their products to be sold nationwide at retailers such as Whole Foods, Fresh Thyme, HEB, Natural Grocers, and more. Most recently, Craig managed an independent grocery store that prominently featured local produce and food goods, achieving great success through marketing and social media channels. Craig's passion for local food, coupled with his extensive industry experience, inspired him to establish Cultivate Local Food Marketing to assist other local food producers and retailers in achieving marketplace success.</p> 
+
+           
+
+<br>
+           <h3>Fostering Connections: Cultivate's Role in the Local Food Narrative</h3>
+       
+           <p>
+            In the ever-evolving landscape of local food marketing, Cultivate stands as a beacon of innovation and success. Our strategic approach is not merely about promoting your products; it's about weaving a narrative that resonates with consumers, fosters community, and supports sustainable food systems. Through our comprehensive suite of services and our deep-rooted passion for local food, we empower businesses to thrive in a competitive market, ensuring that the fruits of their labor reach tables near them.
+           </p>
+           <p>
+            As we look to the future, Cultivate remains steadfast in its mission to champion the local food movement. By blending our vast experience with a dynamic, forward-thinking approach, we continue to pave the way for a healthier, more sustainable world—one local food enterprise at a time.
+           </p>
+
+          
+
+            
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                                
+                                
 
     {% include 'components/cta.html' %}
 
