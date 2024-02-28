@@ -59,7 +59,8 @@
     text-decoration: none;
     width: auto;
     padding: 0 1.875rem;
-    color: #000;
+    border-radius: 0.25rem;
+    color: #fff;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
@@ -971,6 +972,7 @@
     background-color: var(--primary);
     overflow: hidden;
     display: inline-block;
+    border-radius: 0.25rem;
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
@@ -1396,7 +1398,7 @@
     margin: 0;
     color: #fff;
     padding: 0 3rem;
-    border-radius: 1.875rem;
+    border-radius: 0.25rem;
     background-color: var(--primary);
     display: inline-block;
     position: relative;
