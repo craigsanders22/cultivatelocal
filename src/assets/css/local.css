@@ -570,6 +570,25 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-1565 .cs-title,
+  body.dark-mode #sbs-1565 .cs-text,
+  body.dark-mode #sbs-1565 .cs-li,
+  body.dark-mode #sbs-1565 .cs-h3,
+  body.dark-mode #sbs-1565 .cs-li-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-1565 .cs-li-text,
+  body.dark-mode #sbs-1565 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-1565 .cs-li-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #sbs-1565 .cs-li-picture {
+    background-color: var(--dark);
+  }
+}
+@media only screen and (min-width: 0rem) {
   body.dark-mode #why-choose-1634 {
     background-color: rgba(0, 0, 0, 0.3);
   }

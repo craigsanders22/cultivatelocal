@@ -660,6 +660,32 @@
 }
 
 /* Dark Mode */
+
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-1565 {
+            .cs-title,
+            .cs-text,
+            .cs-li,
+            .cs-h3, 
+            .cs-li-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-li-text, .cs-text {
+                opacity: .8;
+            }
+
+            .cs-li-icon {
+                filter: grayscale(1) brightness(1000%);
+            }
+
+            .cs-li-picture {
+                background-color: var(--dark);
+            }
+        }
+    }
+}
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #why-choose-1634 {
