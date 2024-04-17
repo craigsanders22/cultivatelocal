@@ -3,7 +3,7 @@ title: "Harvesting Stories: Leveraging StoryBrand for Growth"
 description: "Cultivating Success: How Small Businesses Can Grow Their Business
   with Donald Miller's StoryBrand Strategy"
 author: Craig Sanders
-date: 2024-03-14T15:29:01.171Z
+date: 2024-04-14T15:29:01.171Z
 tags:
   - post
   - featured

@@ -3,7 +3,7 @@ title: "Harvesting Success: How Small Farms Can Grow with Online Stores"
 description: "Explore the transformative advantages small farms gain by
   establishing online stores through platforms like Shopify or Square. "
 author: Craig Sanders
-date: 2024-03-05T18:47:00.000Z
+date: 2024-04-05T18:47:00.000Z
 tags:
   - post
   - featured

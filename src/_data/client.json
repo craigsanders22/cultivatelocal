@@ -1,15 +1,15 @@
 {
     "name": "Cultivate Local Food Marketing",
     "email": "hello@cultivatelocalfood.com",
-    "phoneForTel": "765-721-0820",
-    "phoneFormatted": "(765) 721-0820",
+    "phoneForTel": "317-528-0078",
+    "phoneFormatted": "(317)528-0078",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
         "city": "Indianapolis",
         "state": "IN",
         "zip": "46219",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "mapLink": "https://maps.app.goo.gl/DHftMncH44iRU9oS6"
     },
     "domain": "https://www.cultivatelocalfood.com"
 }

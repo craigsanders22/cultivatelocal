@@ -4,7 +4,7 @@ description: Discover how a well-designed logo can transform small farms and
   food businesses, setting them apart in a crowded market by establishing a
   memorable brand identity and fostering customer loyalty.
 author: Craig Sanders
-date: 2024-02-23T22:19:00.000Z
+date: 2024-03-23T22:19:00.000Z
 tags:
   - post
   - featured
