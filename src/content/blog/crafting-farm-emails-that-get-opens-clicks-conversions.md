@@ -4,7 +4,8 @@ description: "How to engage with your audience and get them to open your emails!
 author: Craig
 date: 2024-07-24T10:36:00.000Z
 tags:
-  - postfeatured
+  - post
+  - featured
 image: /assets/images/blog/3213.jpg
 imageAlt: a tablet with keyboard and email inbox on screen
 ---
