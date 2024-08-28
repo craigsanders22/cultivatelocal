@@ -431,9 +431,9 @@
   }
   #cs-navigation .cs-logo {
     width: auto;
-    height: 2.5rem;
+    height: 3rem;
     margin: 0 auto 0 0;
-    padding: 0;
+    padding: 10px;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -964,6 +964,7 @@
   }
   #cs-navigation .cs-logo img {
     width: auto;
+    height: 5rem;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
