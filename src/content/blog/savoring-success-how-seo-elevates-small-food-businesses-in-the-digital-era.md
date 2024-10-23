@@ -3,7 +3,7 @@ title: "Savoring Success: How SEO Elevates Small Food Businesses in the Digital 
 description: Dive into the savory world of SEO and discover how it can be the
   secret ingredient to success for small food businesses.
 author: Craig Sanders
-date: 2024-07-04T19:21:00.000Z
+date: 2024-09-08-T18:47:00.000Z
 tags:
   - post
   - featured
