@@ -2,7 +2,7 @@
 title: Crafting Farm Emails That Get Opens, Clicks, & Conversions
 description: "How to engage with your audience and get them to open your emails! "
 author: Craig
-date: 2024-09-08-05T18:47:00.000Z
+date: 2024-09-08T18:47:00.000Z
 tags:
   - post
   - featured

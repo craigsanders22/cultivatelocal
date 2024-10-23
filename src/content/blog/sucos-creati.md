@@ -2,7 +2,7 @@
 title: "Why Every Small Farm Needs a Website to Thrive in Today's Market"
 description: Why a website is vital for success at a farmers market, for Saturday and beyond.
 author: Craig Sanders
-date: 2024-08-02T19:21:00.000Z
+date: 2024-10-08T18:47:00.000Z
 tags:
   - post
   - featured
