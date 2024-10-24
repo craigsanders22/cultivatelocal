@@ -1,6 +1,6 @@
 ---
-title: "Winter: When Summer Success is Cultivated!"
-description: Enhancing Online Presence and Planning for Success in the Winter Months
+title: "Winter: Time to Plan for Success!"
+description: Tips for taking advantage of slower seasons to succeed in the next season.
 author: Craig Sanders
 date: 2024-10-24T09:25:00.000Z
 tags:
