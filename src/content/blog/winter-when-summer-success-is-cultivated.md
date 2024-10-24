@@ -5,6 +5,7 @@ author: Craig Sanders
 date: 2024-10-24T09:25:00.000Z
 tags:
   - post
+  - featured
 image: /assets/images/blog/empty-snowy-field-with-mist-trees-distance.jpg
 imageAlt: Snowy Field
 ---
