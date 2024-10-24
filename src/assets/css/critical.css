@@ -303,6 +303,7 @@
     color: #fff;
     position: relative;
     max-width: 20ch;
+    padding-top: 50px;
   }
   #hero-82 .cs-title:after {
     /* Divider Line */
