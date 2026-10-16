@@ -22,7 +22,7 @@ export default {
   },
 
   // Google Analytics 4 measurement ID, like "G-XXXXXXXXXX". Blank = no analytics script.
-  ga4: "",
+  ga4: "G-XTMYVHVD8P",
 
   nav: [
     { label: "Services", url: "/services/" },
