@@ -13,7 +13,7 @@ export default {
   // Paste the "booking page" link from Google Calendar here
   // (looks like https://calendar.google.com/calendar/appointments/schedules/AcZssZ...).
   // Leave blank and the Book page shows phone, email, and the form instead.
-  bookingUrl: "",
+  bookingUrl: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2UCnA5UMhXuV3egwgMkJU2oXUH6mrMTiG24r4kSFtA4EgkI-nUgH4WmFiyCsc3lQxcvah6nkGe",
 
   // Tally form IDs (the part after tally.so/r/)
   tally: {
