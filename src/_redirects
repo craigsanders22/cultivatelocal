@@ -1,1 +1,11 @@
+# Old pages
+/contact          /book/          301
+/contact/         /book/          301
+/reviews          /work/          301
+/reviews/         /work/          301
+/gallery          /work/          301
+/gallery/         /work/          301
 
+# Old blog: the index and every post go to Resources until posts are rebuilt
+/blog             /resources/     301
+/blog/*           /resources/     301

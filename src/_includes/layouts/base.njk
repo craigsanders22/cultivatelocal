@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (seoTitle or (title + " | " + site.name)) %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:image" content="{{ (ogImage or '/assets/img/og-default.png') | absoluteUrl(site.url) }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+  <meta name="theme-color" content="#2F4A2A">
+
+  <link rel="preload" href="/assets/fonts/zilla-slab-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/libre-franklin-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css?v=2">
+
+  {% if site.ga4 %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.ga4 }}');</script>
+  {% endif %}
+
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cultivate Local",
+    "url": "{{ site.url }}",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phoneTel }}",
+    "image": "{{ '/assets/img/cultivate-logo.png' | absoluteUrl(site.url) }}",
+    "address": { "@type": "PostalAddress", "addressLocality": "Indianapolis", "addressRegion": "IN", "addressCountry": "US" },
+    "areaServed": "US",
+    "founder": { "@type": "Person", "name": "Craig Sanders" },
+    "description": "{{ description }}"
+  }
+  </script>
+  {% endif %}
+  {% block head %}{% endblock %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip" href="#main">Skip to main content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% if not hideCta %}{% include "partials/cta.njk" %}{% endif %}
+  {% include "partials/footer.njk" %}
+  <script src="/assets/js/site.js" defer></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

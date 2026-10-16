@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Resources for Farms
+permalink: /resources/
+description: "Plain articles on websites, online stores, and email for small farms and food businesses, plus a free website self-check."
+---
+<section class="page-head">
+  <div class="wrap">
+    <h1>Resources for farms</h1>
+    <p class="lede">Short, plain articles on websites, online stores, and email for farms and food businesses. Written for people who'd rather be outside.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    {% include "partials/selfcheck-promo.njk" %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Articles</h2>
+    {% if collections.resources.length %}
+      <ul class="who-list measure">
+        {%- for post in collections.resources %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a> <span class="muted small">{{ post.date | readableDate }}</span></li>
+        {%- endfor %}
+      </ul>
+    {% else %}
+      <p class="muted measure">New articles are on the way. In the meantime, the self-check above is the best place to start, or <a href="/book/">book a free call</a> and ask me directly.</p>
+    {% endif %}
+  </div>
+</section>
