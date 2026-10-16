@@ -9,8 +9,8 @@ backend:
 media_folder: src/assets/img/uploads
 public_folder: /assets/img/uploads
 
-site_url: https://www.cultivatelocalfood.com
-display_url: https://www.cultivatelocalfood.com
+site_url: https://cultivatelocalfood.com
+display_url: https://cultivatelocalfood.com
 
 collections:
   - name: resources

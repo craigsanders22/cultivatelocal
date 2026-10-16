@@ -1,7 +1,7 @@
 // Everything you'd want to change in one place.
 export default {
   name: "Cultivate Local",
-  url: "https://www.cultivatelocalfood.com",
+  url: "https://cultivatelocalfood.com",
   city: "Indianapolis, Indiana",
   email: "hello@cultivatelocalfood.com",
   phone: "(765) 721-0820",
