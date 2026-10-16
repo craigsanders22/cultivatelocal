@@ -4,8 +4,8 @@ export default {
   url: "https://www.cultivatelocalfood.com",
   city: "Indianapolis, Indiana",
   email: "hello@cultivatelocalfood.com",
-  phone: "(317) 528-0078",
-  phoneTel: "+13175280078",
+  phone: "(765) 721-0820",
+  phoneTel: "+17657210820",
   hours: "Tuesday through Friday, 3 to 7pm Eastern",
   hoursShort: "Tue–Fri, 3–7pm ET",
 
