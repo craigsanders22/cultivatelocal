@@ -28,8 +28,6 @@ npm run build      # writes the site to public/
 - **Booking:** create a Google Calendar appointment schedule (Tue–Fri, 3–7pm ET, 30 min), open its booking page, copy the link, and paste it into `bookingUrl` in `src/_data/site.js`. Until then, the Book page shows phone and email instead.
 - **Forms:** Tally forms `BE4ZkY` (intake) and `kba56j` (self-check signup). They only show on the site once published in Tally. The self-check form already sends people to `/self-check/thanks/` when they submit. To get every signup in a Google Sheet, connect it under the form's Integrations tab in Tally.
 - **Google Analytics:** paste your GA4 measurement ID (`G-…`) into `ga4` in `src/_data/site.js`.
-- **Partner badges:** download the official files from your Shopify Partner Dashboard (Business Overview → Resources → Download badge) and Klaviyo's partner portal, put them in `src/assets/img/badges/`, and add the file names to `src/_data/badges.js`. Until then the site shows plain text labels.
-- **Photos:** the dashed boxes on Home and About are placeholders. Drop photos into `src/assets/img/` and swap the `photo-slot` divs for `<img>` tags.
 
 ## Editing posts and projects
 

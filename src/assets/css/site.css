@@ -238,13 +238,9 @@ strong { font-weight: 700; }
 .placeholder { background: #FFF6D6; outline: 1px dashed var(--corn); padding: 0 0.2em; border-radius: 2px; }
 
 /* ---------- Tools strip ---------- */
-.tools { display: grid; gap: 1.5rem; align-items: center; }
-@media (min-width: 52rem) { .tools { grid-template-columns: auto 1fr; gap: 3rem; } }
-.badges { display: flex; flex-wrap: wrap; gap: 1rem; }
-.badge-slot { display: inline-flex; align-items: center; gap: 0.6rem; border: 1px solid var(--leaf-line); background: #fff; border-radius: var(--radius); padding: 0.6rem 0.9rem; font-weight: 700; }
-.badge-slot img { height: 2.5rem; width: auto; }
-.badge-mark { display: inline-block; width: 1.4rem; height: 1.4rem; border-radius: 0 70% 0 70%; background: var(--leaf); }
-.tool-names { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; }
+.tools-title { font-size: 1.25rem; margin: 0; }
+.tool-names { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .tool-names li { margin: 0; padding: 0.35rem 0.75rem; border: 1px solid var(--leaf-line); border-radius: 999px; font-size: var(--t-sm); background: var(--paper); }
 
 /* ---------- Self-check promo (the corn moment) ---------- */
@@ -323,7 +319,8 @@ strong { font-weight: 700; }
 .article-list h3 a { color: var(--ink); text-decoration: none; }
 .article-list h3 a:hover { text-decoration: underline; text-decoration-color: var(--leaf); }
 .article-list p { margin: 0; color: var(--ink-soft); }
-.about-side .tools { grid-template-columns: 1fr; gap: 1.25rem; }
+.about-side .tools { display: block; }
+.about-side .tool-names { margin-top: 0.75rem; }
 
 /* Principles list on About */
 .principles { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; }
