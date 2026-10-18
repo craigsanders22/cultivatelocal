@@ -8,16 +8,20 @@ description: "Websites, Shopify stores, email, and ads for small farms, meat pro
   <div class="wrap hero-grid">
     <div>
       <h1>Websites, online stores, and marketing for small farms</h1>
-      <p class="lede">I'm Craig. I grew up on a family farm in Putnam County, Indiana, and spent years selling local food before I ever built a website. Now I help farms, meat processors, and food makers sell more of what they raise and make: online, by email, and with ads that pay for themselves or get turned off.</p>
+      <p class="lede">Cultivate Local helps farms, meat processors, and food makers sell more of what they raise and make. I build websites and online stores that are easy to buy from, and run the email and ads that bring customers back.</p>
       <div class="btn-row">
         <a class="btn" href="/book/">Book a free call</a>
         <a class="btn btn-outline" href="/self-check/">Take the free website self-check</a>
       </div>
       <p class="hero-where">Based in Indianapolis. Working with farms anywhere.</p>
     </div>
-    <div>
-      {% include "partials/board.njk" %}
-    </div>
+    <figure class="hero-photo">
+      <img src="/assets/img/heirloom-tomatoes-hero-760.webp"
+           srcset="/assets/img/heirloom-tomatoes-hero-500.webp 500w, /assets/img/heirloom-tomatoes-hero-760.webp 760w"
+           sizes="(min-width: 60rem) 30rem, calc(100vw - 2rem)"
+           alt="A table of heirloom tomatoes in red, yellow, green, and purple"
+           width="760" height="950" fetchpriority="high" decoding="async">
+    </figure>
   </div>
 </section>
 
@@ -33,8 +37,7 @@ description: "Websites, Shopify stores, email, and ads for small farms, meat pro
       </ul>
     </div>
     <div>
-      <p class="lede" style="color:var(--ink)">If your marketing keeps getting pushed to the bottom of the list behind chores, deliveries, and markets, this is for you.</p>
-      <p><a href="/services/">See what's in each package</a></p>
+      <p class="lede" style="color:var(--ink)">On most farms, marketing gets whatever time is left after chores, deliveries, and markets. I take that work off your plate, or set it up so it takes far less of your time.</p>
     </div>
   </div>
 </section>
@@ -44,34 +47,45 @@ description: "Websites, Shopify stores, email, and ads for small farms, meat pro
     <h2>How it works</h2>
     <ol class="steps">
       <li>
-        <h3>We talk.</h3>
-        <p>A free 30-minute call. Tell me what you sell and what isn't working. I'll tell you straight whether I can help.</p>
+        <h3>A free first call</h3>
+        <p>Thirty minutes on what you sell, how you sell it today, and what isn't working. If I'm not the right fit, I'll say so.</p>
       </li>
       <li>
-        <h3>You get a plan and a price in writing.</h3>
-        <p>Before any work starts. No surprises on the bill.</p>
+        <h3>A written plan and quote</h3>
+        <p>You'll know the scope, the timeline, and the cost before any work starts.</p>
       </li>
       <li>
-        <h3>I build it and show you how to run it.</h3>
-        <p>Your site, store, and email list are in your name. If we ever stop working together, it all stays with you.</p>
+        <h3>The build and the handoff</h3>
+        <p>I build it and walk you through running it. Your site, store, and email list stay in your name, always.</p>
       </li>
     </ol>
   </div>
 </section>
 
-<div class="wrap">{% set band = "strip" %}{% include "partials/photo-band.njk" %}</div>
+<section class="section section-tight-top">
+  <div class="wrap split split-price">
+    <div>
+      <h2>Packages</h2>
+      <p>Most projects fit one of four packages. On the first call we'll figure out which one makes sense for you, or whether you need something custom.</p>
+      <p><a href="/services/">Compare the packages</a></p>
+    </div>
+    <div>
+      {% include "partials/board.njk" %}
+    </div>
+  </div>
+</section>
 
 <section class="section section-pale">
   <div class="wrap split split-wide-left">
     <div>
       <h2>I've worked from your side of the business</h2>
-      <p>I grew up picking sweet corn for market on our family's place in Putnam County. After college I worked in sales and marketing at Traders Point Creamery, back when their milk and yogurt were making it onto shelves across the country. Then I owned Wildwood Market, a grocery in Indianapolis full of local food, and learned the hard way what it takes to get people in the door every week.</p>
-      <p>These days I also build online stores and run email and ads for food brands that ship nationwide. Cultivate is where I bring what I've learned there to small farms.</p>
-      <p>You work directly with me from the first call to launch day, not handed off to an account manager. When a job calls for a photographer or a developer, I bring in people I trust and tell you up front.</p>
+      <p>Before I built websites, I sold local food. I worked in sales and marketing at Traders Point Creamery as their milk and yogurt went into stores across the country, then owned Wildwood Market, a local-food grocery in Indianapolis. I know what it takes to bring customers back every week.</p>
+      <p>Today I also run online stores, email, and ads for food brands that ship nationwide. Cultivate brings that same work to farms and local food businesses.</p>
+      <p>You work directly with me from the first call through launch. When a project needs a photographer or a developer, I bring in people I trust and you'll know who's involved.</p>
       <p><a href="/about/">More about me</a></p>
     </div>
     <div>
-      {% include "partials/background.njk" %}
+      {% set skipFarm = true %}{% include "partials/background.njk" %}
     </div>
   </div>
 </section>
