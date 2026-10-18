@@ -379,3 +379,10 @@ strong { font-weight: 700; }
   .site-header, .site-footer, .closer, .btn, .btn-row { display: none !important; }
   body { background: #fff; font-size: 11pt; }
 }
+
+/* Hero photo */
+.hero-photo { margin: 0; border-radius: 10px; overflow: hidden; background: var(--leaf-pale); align-self: stretch; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 59.99rem) { .hero-photo img { aspect-ratio: 4 / 3; height: auto; } }
+.section-tight-top { padding-top: calc(var(--section) * 0.25); }
+@media (min-width: 60rem) { .split-price { grid-template-columns: 1fr 1.25fr; align-items: center; } }

@@ -15,9 +15,13 @@ description: "Websites, Shopify stores, email, and ads for small farms, meat pro
       </div>
       <p class="hero-where">Based in Indianapolis. Working with farms anywhere.</p>
     </div>
-    <div>
-      {% include "partials/board.njk" %}
-    </div>
+    <figure class="hero-photo">
+      <img src="/assets/img/heirloom-tomatoes-hero-760.webp"
+           srcset="/assets/img/heirloom-tomatoes-hero-500.webp 500w, /assets/img/heirloom-tomatoes-hero-760.webp 760w"
+           sizes="(min-width: 60rem) 30rem, calc(100vw - 2rem)"
+           alt="A table of heirloom tomatoes in red, yellow, green, and purple"
+           width="760" height="950" fetchpriority="high" decoding="async">
+    </figure>
   </div>
 </section>
 
@@ -59,7 +63,18 @@ description: "Websites, Shopify stores, email, and ads for small farms, meat pro
   </div>
 </section>
 
-<div class="wrap">{% set band = "strip" %}{% include "partials/photo-band.njk" %}</div>
+<section class="section section-tight-top">
+  <div class="wrap split split-price">
+    <div>
+      <h2>What it costs</h2>
+      <p>Four packages, with prices posted up front. Whatever you pick, you get the plan and the price in writing before any work starts.</p>
+      <p><a href="/services/">Compare the packages</a></p>
+    </div>
+    <div>
+      {% include "partials/board.njk" %}
+    </div>
+  </div>
+</section>
 
 <section class="section section-pale">
   <div class="wrap split split-wide-left">
