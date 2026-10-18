@@ -1,1 +1,23 @@
+# Old pages
+/contact          /book/          301
+/contact/         /book/          301
+/reviews          /work/          301
+/reviews/         /work/          301
+/gallery          /work/          301
+/gallery/         /work/          301
+/content/pages/gallery   /work/   301
+/content/pages/gallery/  /work/   301
 
+# Old blog posts that were kept: send each to its new page
+/blog/winter:-time-to-plan-for-success!/          /resources/winter-planning-for-small-farms/           301
+/blog/winter:-time-to-plan-for-success!           /resources/winter-planning-for-small-farms/           301
+/blog/winter%3A-time-to-plan-for-success%21/      /resources/winter-planning-for-small-farms/           301
+/blog/harvesting-success:-how-small-farms-can-grow-with-online-stores/   /resources/why-small-farms-should-sell-online/   301
+/blog/harvesting-success:-how-small-farms-can-grow-with-online-stores    /resources/why-small-farms-should-sell-online/   301
+/blog/harvesting-success%3A-how-small-farms-can-grow-with-online-stores/ /resources/why-small-farms-should-sell-online/   301
+/blog/crafting-farm-emails-that-get-opens-clicks-and-conversions/        /resources/farm-emails-that-get-opened/          301
+/blog/crafting-farm-emails-that-get-opens-clicks-and-conversions         /resources/farm-emails-that-get-opened/          301
+
+# Every other old blog address goes to the Resources page
+/blog             /resources/     301
+/blog/*           /resources/     301

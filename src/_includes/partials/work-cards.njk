@@ -1,0 +1,13 @@
+<div class="work-list">
+  {%- for p in collections.work %}
+  <article class="work-card">
+    <a class="work-shot" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+      <img src="/assets/img/work/{{ p.data.slug }}-home.webp" alt="" width="1200" height="750" loading="lazy">
+    </a>
+    <h3><a href="{{ p.url }}">{{ p.data.title }}</a></h3>
+    <p class="work-where">{{ p.data.place }}</p>
+    <p class="work-sum">{{ p.data.summary }}</p>
+    <a href="{{ p.url }}">See the project<span class="visually-hidden"> for {{ p.data.title }}</span></a>
+  </article>
+  {%- endfor %}
+</div>

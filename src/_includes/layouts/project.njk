@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="muted" style="margin:0 0 .5rem"><a href="/work/">Work</a></p>
+    <h1>{{ title }}</h1>
+    <p class="lede">{{ place }}. {{ summary }}</p>
+    <div class="btn-row">
+      <a class="btn btn-outline" href="https://{{ liveSite }}" rel="noopener" target="_blank">Visit {{ liveSite }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="project-shots">
+      <figure class="shot">
+        <img src="/assets/img/work/{{ slug }}-home.webp" alt="{{ title }} homepage on a computer" width="1200" height="750">
+        <figcaption>Homepage</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/assets/img/work/{{ slug }}-phone.webp" alt="{{ title }} homepage on a phone" width="420" height="909" loading="lazy">
+        <figcaption>On a phone</figcaption>
+      </figure>
+      <figure class="shot shot-wide-2">
+        <img src="/assets/img/work/{{ slug }}-shop.webp" alt="{{ title }} online store product page" width="1200" height="750" loading="lazy">
+        <figcaption>The store</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <dl class="facts measure">
+      <div><dt>The farm</dt><dd>{{ farm }}</dd></div>
+      <div><dt>What they needed</dt><dd>{{ needed }}</dd></div>
+      <div><dt>What I built</dt><dd>{{ built }}</dd></div>
+      {% if going %}<div><dt>How it's going</dt><dd>{{ going }}</dd></div>{% endif %}
+      <div><dt>Tools</dt><dd>{{ tools }}</dd></div>
+    </dl>
+    <div class="note measure" style="margin-top:2rem">
+      <p><em>Want something like this for your farm?</em> <a href="/book/">Book a free call</a></p>
+    </div>
+  </div>
+</section>

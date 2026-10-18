@@ -1,0 +1,16 @@
+@font-face { font-family: "Zilla Slab"; font-weight: 700; src: url("../src/assets/fonts/zilla-slab-latin-700-normal.woff2"); }
+@font-face { font-family: "Zilla Slab"; font-weight: 500; src: url("../src/assets/fonts/zilla-slab-latin-500-normal.woff2"); }
+@font-face { font-family: "Libre Franklin"; font-weight: 400; src: url("../src/assets/fonts/libre-franklin-latin-400-normal.woff2"); }
+@font-face { font-family: "Libre Franklin"; font-weight: 700; src: url("../src/assets/fonts/libre-franklin-latin-700-normal.woff2"); }
+@page { size: Letter; margin: 0.55in 0.6in; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Libre Franklin", sans-serif; font-size: 10.5pt; line-height: 1.4; color: #23271F; }
+h1, h2, h3 { font-family: "Zilla Slab", serif; font-weight: 700; margin: 0; line-height: 1.1; }
+.top { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #2F4A2A; padding-bottom: 8pt; margin-bottom: 10pt; }
+.top img { width: 1.25in; }
+h1 { font-size: 22pt; }
+.sub { margin: 4pt 0 0; color: #4A5144; }
+h2 { font-size: 12.5pt; color: #2F4A2A; margin: 10pt 0 4pt; }
+p { margin: 0 0 6pt; }
+.foot { margin-top: 10pt; padding-top: 8pt; border-top: 1px solid #C9D3B2; font-size: 9.5pt; display: flex; justify-content: space-between; gap: 12pt; }
+.foot strong { font-family: "Zilla Slab", serif; font-size: 11pt; }

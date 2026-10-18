@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: Book a Free Call
+permalink: /book/
+description: "Book a free 30-minute call about your farm's website, online store, or marketing. Tuesday–Friday, 3–7pm Eastern."
+hideCta: true
+---
+<section class="page-head">
+  <div class="wrap">
+    <h1>Let's talk about your farm.</h1>
+    <p class="lede">A free 30-minute call, {{ site.hours }}. Pick a time below.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap book-grid">
+    <div>
+      {% if site.bookingUrl %}
+        <iframe class="booking-frame" src="{{ site.bookingUrl }}{% if '?' in site.bookingUrl %}&{% else %}?{% endif %}gv=true" title="Pick a time for a free call" loading="lazy"></iframe>
+        <p class="small muted">Calendar not loading? <a href="{{ site.bookingUrl }}" target="_blank" rel="noopener">Open the booking page</a>.</p>
+      {% else %}
+        <div class="booking-fallback">
+          <h2 style="font-size:1.5rem">Online booking is almost ready</h2>
+          <p>Until it is, call or text <a href="tel:{{ site.phoneTel }}">{{ site.phone }}</a> or email <a href="mailto:{{ site.email }}">{{ site.email }}</a> with a couple of times that work, and I'll send an invite.</p>
+        </div>
+      {% endif %}
+
+      <h2 style="margin-top:2.5rem;font-size:1.5rem">What we'll cover</h2>
+      <ul class="ticks">
+        <li>What you sell, how you sell it now, and what's not working</li>
+        <li>Whether I can help, and which package fits, if any</li>
+        <li>What it would cost and how long it would take</li>
+      </ul>
+      <p>No sales pitch. If I'm not the right fit, I'll tell you.</p>
+
+      <h2 id="write" style="margin-top:2.5rem">Rather write than talk?</h2>
+      {% set tallyId = site.tally.intake %}{% set tallyTitle = "Tell me about your farm" %}{% set tallyThanks = "" %}
+      {% include "partials/tally.njk" %}
+    </div>
+
+    <aside>
+      <div class="contact-card">
+        <h2>Or reach me directly</h2>
+        <p class="muted small" style="margin-bottom:.25rem">Call or text</p>
+        <p class="contact-big"><a href="tel:{{ site.phoneTel }}">{{ site.phone }}</a></p>
+        <p class="muted small" style="margin:1rem 0 .25rem">Email</p>
+        <p class="contact-big" style="font-size:1.125rem;word-break:break-word"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p class="muted small" style="margin-top:1rem">{{ site.hoursShort }}. Based in Indianapolis, working with farms anywhere.</p>
+      </div>
+      <a class="pdf-card" href="/assets/pdf/working-with-cultivate.pdf">
+        <span class="pdf-icon" aria-hidden="true">PDF</span>
+        <span><strong>Working With Cultivate</strong><span class="small muted">The four packages, prices, and how it works, on one page.</span></span>
+      </a>
+    </aside>
+  </div>
+</section>
+<script src="https://tally.so/widgets/embed.js" async onload="Tally.loadEmbeds()"></script>

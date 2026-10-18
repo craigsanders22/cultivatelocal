@@ -1,26 +1,46 @@
+# Sveltia CMS settings. Sign-in is through GitHub.
+# One-time setup is in README.md ("Editing posts and projects").
 backend:
-  name: git-gateway
+  name: github
+  repo: craigsanders22/cultivatelocal
   branch: main
+  base_url: https://api.netlify.com
 
-local_backend: true
-# change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: https://codestitch.app/frontend/images/logo.png
+media_folder: src/assets/img/uploads
+public_folder: /assets/img/uploads
 
-media_folder: "src/assets/images/blog"
-public_folder: "/assets/images/blog"
+site_url: https://cultivatelocalfood.com
+display_url: https://cultivatelocalfood.com
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/content/blog"
+  - name: resources
+    label: Resources (articles)
+    label_singular: Article
+    folder: src/resources
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image Caption", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Title, name: title, widget: string }
+      - { label: "Short description (for Google)", name: description, widget: string }
+      - { label: Date, name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { label: "Hide (draft)", name: draft, widget: boolean, default: false, required: false }
+      - { label: Article, name: body, widget: markdown }
+
+  - name: work
+    label: Work (projects)
+    label_singular: Project
+    folder: src/work
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Farm name, name: title, widget: string }
+      - { label: "Town, State", name: place, widget: string }
+      - { label: "Live site (no https://)", name: liveSite, widget: string }
+      - { label: Order on page, name: order, widget: number, value_type: int }
+      - { label: "One-line summary", name: summary, widget: string }
+      - { label: "Short description (for Google)", name: description, widget: string }
+      - { label: The farm, name: farm, widget: text }
+      - { label: What they needed, name: needed, widget: text }
+      - { label: What I built, name: built, widget: text }
+      - { label: "How it's going (optional)", name: going, widget: text, required: false }
+      - { label: Tools, name: tools, widget: string }

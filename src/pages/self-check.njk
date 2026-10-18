@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Free Farm Website Self-Check
+permalink: /self-check/
+description: "A free one-page self-check for farm websites. About 15 yes-or-no questions, 10 minutes, and you'll know what to fix first."
+hideCta: true
+---
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h1>Is your farm website working?</h1>
+      <p class="lede">A free one-page self-check. About 15 yes-or-no questions you can answer from your phone in 10 minutes. At the end you'll know what's working, what isn't, and what to fix first.</p>
+      <h2 style="font-size:1.375rem">It covers</h2>
+      <ul class="who-list">
+        <li>Whether people can find you on Google</li>
+        <li>How your site looks and works on a phone</li>
+        <li>Whether it's easy to buy from you</li>
+        <li>How you're keeping in touch with customers</li>
+      </ul>
+    </div>
+    <div class="contact-card" style="border-top:8px solid var(--corn)">
+      <h2>Where should I send it?</h2>
+      {% set tallyId = site.tally.selfCheck %}{% set tallyTitle = "Get the free self-check" %}{% set tallyThanks = "/self-check/thanks/" %}
+      {% include "partials/tally.njk" %}
+      <p class="small muted" style="margin-top:.5rem">I'll only email you if you check the box to hear from me. No spam, ever.</p>
+    </div>
+  </div>
+</section>
+<script src="https://tally.so/widgets/embed.js" async onload="Tally.loadEmbeds()"></script>

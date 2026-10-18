@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <header class="page-head">
+    <div class="wrap">
+      <p class="muted" style="margin:0 0 .5rem"><a href="/resources/">Resources</a></p>
+      <h1>{{ title }}</h1>
+      <p class="muted small" style="margin:0"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></p>
+    </div>
+  </header>
+  <div class="section">
+    <div class="wrap">
+      <div class="prose">{{ content | safe }}</div>
+    </div>
+  </div>
+</article>
+<section class="section-tight">
+  <div class="wrap">{% include "partials/selfcheck-promo.njk" %}</div>
+</section>

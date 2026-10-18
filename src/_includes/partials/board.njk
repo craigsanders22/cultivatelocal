@@ -1,0 +1,16 @@
+<div class="board">
+  <p class="board-title">{{ boardTitle or "Packages and starting prices" }}</p>
+  <ul class="board-list">
+    {%- for p in packages %}
+    <li class="board-item">
+      <div class="board-line">
+        <a href="/services/#{{ p.id }}">{{ p.name }}</a>
+        <span class="board-dots" aria-hidden="true"></span>
+        <span class="board-price"><span class="board-from">from</span>{{ p.price }}{% if p.per %}<small>{{ p.per }}</small>{% endif %}</span>
+      </div>
+      <p class="board-blurb">{{ p.blurb }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="board-foot">Bigger jobs, like meat processors, food hubs, and wholesale ordering, get a custom quote. <a href="/services/">See what's in each package</a></p>
+</div>

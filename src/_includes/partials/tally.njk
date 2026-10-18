@@ -1,0 +1,5 @@
+{# usage: {% set tallyId = site.tally.intake %}{% set tallyTitle = "..." %}{% include "partials/tally.njk" %} #}
+<iframe class="tally-frame" data-tally-form="{{ tallyId }}"{% if tallyThanks %} data-thanks="{{ tallyThanks }}"{% endif %}
+  data-tally-src="https://tally.so/embed/{{ tallyId }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+  loading="lazy" width="100%" height="560" title="{{ tallyTitle }}"></iframe>
+<noscript><p><a href="https://tally.so/r/{{ tallyId }}">Open the form</a></p></noscript>
