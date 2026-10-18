@@ -23,7 +23,7 @@ description: "I grew up on a family farm in Putnam County, Indiana, worked in lo
       <p>I'm a Shopify Partner and a Klaviyo Partner.</p>
     </div>
     <div>
-      <div class="photo-slot">Photo of Craig, to come</div>
+      {% include "partials/background.njk" %}
     </div>
   </div>
 </section>
@@ -40,12 +40,9 @@ description: "I grew up on a family farm in Putnam County, Indiana, worked in lo
         <li><strong>I answer within one business day,</strong> Tuesday through Friday.</li>
       </ul>
     </div>
-    <div>
-      <div class="photo-slot wide">Photo of a farm, a market, or Putnam County, to come</div>
+    <div class="about-side">
+      {% include "partials/tools.njk" %}
     </div>
   </div>
 </section>
 
-<section class="section-tight">
-  <div class="wrap">{% include "partials/tools.njk" %}</div>
-</section>
