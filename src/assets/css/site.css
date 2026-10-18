@@ -199,6 +199,12 @@ strong { font-weight: 700; }
 }
 .photo-slot.wide { aspect-ratio: 16 / 9; max-width: none; }
 
+/* Photo band */
+.photo-band { margin: 0; border-radius: 10px; overflow: hidden; background: var(--leaf-pale); }
+.photo-band img { width: 100%; height: auto; display: block; }
+.photo-band-strip { margin-bottom: calc(var(--section) * -0.5); position: relative; z-index: 1; }
+@media (max-width: 40rem) { .photo-band img { aspect-ratio: 16 / 9; object-fit: cover; } }
+
 /* Background timeline (stands in for a photo) */
 .path { background: var(--paper); border: 1px solid var(--leaf-line); border-radius: 10px; padding: 1.5rem 1.5rem 1.25rem; }
 .section-pale .path { background: #fff; }

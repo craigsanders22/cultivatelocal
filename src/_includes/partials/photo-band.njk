@@ -1,0 +1,8 @@
+{# usage: {% set band = "strip" %}{% include "partials/photo-band.njk" %} — band is "strip" or "banner" #}
+<figure class="photo-band photo-band-{{ band }}">
+  <img src="/assets/img/heirloom-tomatoes-{{ band }}-1200.webp"
+       srcset="/assets/img/heirloom-tomatoes-{{ band }}-700.webp 700w, /assets/img/heirloom-tomatoes-{{ band }}-1200.webp 1200w, /assets/img/heirloom-tomatoes-{{ band }}-2000.webp 2000w"
+       sizes="(min-width: 72rem) 68rem, calc(100vw - 2rem)"
+       alt="A table of heirloom tomatoes in red, yellow, green, and purple"
+       width="1200" height="{{ 500 if band == 'banner' else 375 }}" loading="lazy" decoding="async">
+</figure>
