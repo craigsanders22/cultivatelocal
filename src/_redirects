@@ -5,6 +5,8 @@
 /reviews/         /work/          301
 /gallery          /work/          301
 /gallery/         /work/          301
+/content/pages/gallery   /work/   301
+/content/pages/gallery/  /work/   301
 
 # Old blog posts that were kept: send each to its new page
 /blog/winter:-time-to-plan-for-success!/          /resources/winter-planning-for-small-farms/           301
