@@ -20,7 +20,7 @@ hideCta: true
     </div>
     <div class="contact-card" style="border-top:8px solid var(--corn)">
       <h2>Where should I send it?</h2>
-      {% set tallyId = site.tally.selfCheck %}{% set tallyTitle = "Get the free self-check" %}
+      {% set tallyId = site.tally.selfCheck %}{% set tallyTitle = "Get the free self-check" %}{% set tallyThanks = "/self-check/thanks/" %}
       {% include "partials/tally.njk" %}
       <p class="small muted" style="margin-top:.5rem">I'll only email you if you check the box to hear from me. No spam, ever.</p>
     </div>
